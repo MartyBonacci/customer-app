@@ -23,5 +23,5 @@ database.sqlite
 .shopify/*
 .shopify.lock
 
-
+# Shopify app configuration
 shopify.app.toml

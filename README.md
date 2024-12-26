@@ -360,3 +360,20 @@ This template uses [Remix](https://remix.run). The following Shopify tools are a
 - [App extensions](https://shopify.dev/docs/apps/app-extensions/list)
 - [Shopify Functions](https://shopify.dev/docs/api/functions)
 - [Getting started with internationalizing your app](https://shopify.dev/docs/apps/best-practices/internationalization/getting-started)
+
+## Configuration Setup
+
+To set up the Shopify app configuration:
+
+1. Copy the example configuration file:
+   ```bash
+   cp shopify.app.toml.example shopify.app.toml
+   ```
+
+2. Update `shopify.app.toml` with your specific values:
+   - `client_id`: Your Shopify app's client ID
+   - `application_url`: Your app's host URL
+   - `auth.redirect_urls`: Update with your application's domain
+   - `build.dev_store_url`: Your development store's URL
+
+Note: Keep `shopify.app.toml` private and never commit it to version control as it contains sensitive information.
